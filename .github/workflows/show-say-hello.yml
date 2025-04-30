@@ -1,4 +1,4 @@
-name: show-directory
+name: show-say-hello
 # on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
@@ -10,7 +10,6 @@ jobs:
     steps: # список шагов, которые надо выполнить
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
-      - uses: actions/checkout@v4
+      - uses: actions/oleg-dixon
       # run – произвольная bash-команда
-      # ls -la выведет содержимое текущего репозитория
       - run: make say-hello
