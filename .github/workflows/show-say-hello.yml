@@ -10,6 +10,6 @@ jobs:
     steps: # список шагов, которые надо выполнить
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
-      - uses: actions/oleg-dixon
+      - uses: actions/checkout@v2
       # run – произвольная bash-команда
       - run: make say-hello
